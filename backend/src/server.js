@@ -20,6 +20,7 @@ app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+app.get("/health", (req, res) => res.status(200).send("ok"));
 
 // CORS options
 const allowedOrigins = [
