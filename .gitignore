@@ -1,0 +1,10 @@
+**/node_modules/
+**/dist/
+**/build/
+**/.angular/
+**/.cache/
+**/.vite/
+**/.next/
+**/coverage/
+**/.env
+.DS_Store
