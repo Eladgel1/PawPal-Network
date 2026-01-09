@@ -38,8 +38,6 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.get("/", (req, res) => res.status(200).send("API is running"));
-
 // Middleware
 app.use(bodyParser.json());
 
@@ -159,6 +157,9 @@ function authenticateToken(req, res, next) {
 }
 
 // Routes
+app.get("/", (req, res) => res.status(200).send("API is running"));
+
+
 app.post('/register', async (req, res) => {
   const { username, firstName, lastName, email, password, dateOfBirth } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
@@ -1281,7 +1282,7 @@ app.get('/getUserDetails', (req, res) => {
 app.get('*', (req, res) => {
 });
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
