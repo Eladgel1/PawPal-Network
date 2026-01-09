@@ -26,7 +26,7 @@ const allowedOrigins = [
   'http://localhost:4200',
   'http://127.0.0.1:4200',
   'http://localhost:3000',
-  'https://PawPal-Network-frontend.onrender.com',
+  'https://pawpal-network-frontend.onrender.com',
 ];
 
 // Configure your email service

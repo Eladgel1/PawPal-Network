@@ -36,7 +36,7 @@ export class UserProfileComponent implements OnInit {
   userPosts: Post[] = [];
   isCurrentUser: boolean = false;
   following: string[] = [];
-  private apiUrl = 'hhttps://PawPal-Network-backend.onrender.com'; // Adjust this to your backend URL
+  private apiUrl = 'https://pawpal-network-backend.onrender.com'; // Adjust this to your backend URL
   uploadedContent: any[] = [];
   sortedContent: Post[] = [];
   sortOption: string = 'date';

@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class AuthService {
   private isAuthenticated = false;
-  private apiUrl = 'https://PawPal-Network-backend.onrender.com'; // Ensure this matches your proxy configuration
+  private apiUrl = 'https://pawpal-network-backend.onrender.com'; // Ensure this matches your proxy configuration
 
   constructor(private router: Router, private http: HttpClient) { }
 

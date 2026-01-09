@@ -22,7 +22,7 @@ export class SearchResultsComponent implements OnInit {
   query: string = '';
   currentUsername: string = '';
 
-  private apiUrl = 'https://PawPal-Network-backend.onrender.com'; // Adjust this to your backend URL
+  private apiUrl = 'https://pawpal-network-backend.onrender.com'; // Adjust this to your backend URL
 
   constructor(
     private route: ActivatedRoute,

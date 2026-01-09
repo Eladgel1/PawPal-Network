@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
   remainingCharacters: number = 200; 
 
 
-  private apiUrl = 'https://PawPal-Network-backend.onrender.com'; // Adjust this to your backend URL
+  private apiUrl = 'https://pawpal-network-backend.onrender.com'; // Adjust this to your backend URL
 
   constructor(
     private sanitizer: DomSanitizer,

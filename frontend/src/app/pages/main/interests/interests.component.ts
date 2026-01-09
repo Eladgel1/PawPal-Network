@@ -62,7 +62,7 @@ export class InterestsComponent implements OnInit {
 
   currentSection: string = 'allInterests';
 
-  private apiUrl = 'https://PawPal-Network-backend.onrender.com'; // Adjust this to your backend URL
+  private apiUrl = 'https://pawpal-network-backend.onrender.com'; // Adjust this to your backend URL
 
   constructor(private http: HttpClient, private authService: AuthService, private sanitizer: DomSanitizer) {}
 

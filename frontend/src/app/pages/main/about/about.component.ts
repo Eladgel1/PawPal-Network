@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
   messageForm!: FormGroup;
   messageSent: boolean = false;
   currentUserName: string = ''; 
-  private apiUrl = 'https://PawPal-Network-backend.onrender.com'; // Adjust this to your backend URL
+  private apiUrl = 'https://pawpal-network-backend.onrender.com'; // Adjust this to your backend URL
 
   constructor(private http: HttpClient, private fb: FormBuilder, private authService: AuthService) { }
 
