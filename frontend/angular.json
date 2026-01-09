@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/paw-pal-network-client",
+            "outputPath": "dist/paw-pal-network-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -66,10 +66,10 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "paw-pal-network-client:build:production"
+              "buildTarget": "paw-pal-network-frontend:build:production"
             },
             "development": {
-              "buildTarget": "paw-pal-network-client:build:development"
+              "buildTarget": "paw-pal-network-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,5 +1,5 @@
 {
-  "name": "paw-pal-network-client",
+  "name": "paw-pal-network-frontend",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
