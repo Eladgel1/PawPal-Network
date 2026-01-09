@@ -1,6 +1,6 @@
 {
     "/api": {
-        "target": "https://paw-pal-network-server.onrender.com",
+        "target": "https://pawpal-network-backend.onrender.com",
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true

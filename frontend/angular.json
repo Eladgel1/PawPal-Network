@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "paw-pal-network-client": {
+    "paw-pal-network-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
