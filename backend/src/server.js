@@ -64,7 +64,7 @@ const mailIconPath = path.join(__dirname, '..', 'image', 'mail.png');
 
 
 // MongoDB connection
-const uri = process.env.MONGODB_URI || 'mongodb+srv://pawpal_db_user:Eg300797@pawpal-network.hpvwk71.mongodb.net/?appName=PawPal-Network';
+const uri = process.env.MONGO_URI;
 mongoose.connect(uri)
   .then(() => {
     console.log('Connected to MongoDB Atlas');
