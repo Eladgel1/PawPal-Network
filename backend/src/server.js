@@ -157,7 +157,14 @@ function authenticateToken(req, res, next) {
 }
 
 // Routes
-app.get("/", (req, res) => res.status(200).send("API is running"));
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'ok',
+    service: 'PawPal Netowrk API'
+  });
+});
+
+app.get('/health', (req, res) => res.status(200).send('API is running'));
 
 
 app.post('/register', async (req, res) => {
