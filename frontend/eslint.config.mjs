@@ -4,6 +4,8 @@ import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 
 export default [
+  pluginJs.configs.recommended,
+
   {
     ignores: [
       "src/app/app.guard.ts",
@@ -12,17 +14,18 @@ export default [
       "src/app/pages/main/home/home.component.ts",
       "src/app/pages/main/login/login.component.ts",
       "src/app/pages/main/main.component.ts",
-      "src/app/app.module.ts"
+      "src/app/app.module.ts",
     ],
   },
+
   {
     files: ["**/*.{js,mjs,cjs,ts}"],
     languageOptions: {
+      parser: tsParser,
       globals: globals.browser,
-      parser: tsParser
     },
     plugins: {
-      "@typescript-eslint": tsPlugin
+      "@typescript-eslint": tsPlugin,
     },
     rules: {
       "no-unused-vars": "off",
@@ -30,9 +33,9 @@ export default [
       "no-console": "off",
       "no-debugger": "off",
       "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/no-undef": "off"
-    }
+    },
   },
+
   {
     files: ["**/*.spec.ts", "**/*.test.ts"],
     languageOptions: {
@@ -41,14 +44,13 @@ export default [
         describe: "readonly",
         it: "readonly",
         beforeEach: "readonly",
-        expect: "readonly"
-      }
+        expect: "readonly",
+      },
     },
     rules: {
       "no-undef": "off",
       "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": "off"
-    }
+      "@typescript-eslint/no-unused-vars": "off",
+    },
   },
-  pluginJs.configs.recommended
 ];
