@@ -70,7 +70,7 @@ Note:
 Development / Local:
 
 ```bash
-- npm run start
+npm run start
 ```
 
 The server will run on the port defined in the environment variables (or fallback to 3000).
