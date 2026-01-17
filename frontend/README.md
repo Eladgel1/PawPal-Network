@@ -1,71 +1,91 @@
-Interest-Based Social Network - Client
-Overview
-This project is the frontend client for an interest-based social network, where users can follow interests, like posts, share posts, and interact with content shared by other users. The client is built using Angular, and it connects to a Node.js and Express backend server.
+# 🐾 PawPal Network - Frontend
 
-Features
-User Authentication: Login and registration with form validation.
-Interest Management: Users can follow and unfollow interests, and view posts related to these interests.
-Post Interactions: Users can create, like, unlike, share, and save posts.
-Dynamic Feed: The feed includes system posts, user posts, interest-based posts, and shared posts.
-Profile Management: Users can edit their profile, change their password, manage their posts, and view their saved posts and followed interests.
-Search Functionality: Users can search for other users and follow/unfollow them.
-Responsiveness: The UI is responsive and adapts to different screen sizes.
-Prerequisites
-Node.js
-Angular CLI
-Git
-Installation and Setup
-Clone the repository:
-bash
-Copy code
-git clone <client-repo-url>
-cd <client-repo-directory>
-Install dependencies:
-bash
-Copy code
+The web client for PawPal Network platform.
+
+---
+
+## 🌟 Overview
+
+The frontend provides the user‑facing experience of PawPal Network. It focuses on clear navigation, smooth user flows, and a friendly interface that allows pet owners to interact with the platform effortlessly.
+
+---
+
+## 🌍 Live Application
+
+- Web App: https://pawpal-network-frontend.onrender.com
+- Backend API: https://pawpal-network-backend.onrender.com
+
+---
+
+## 🧠 Features
+
+- User registration and login
+- Client‑side routing and navigation
+- Integration with the backend API
+- Clean and responsive UI structure
+
+---
+
+## ⚙️ Local Setup
+
+### Prerequisites
+
+- Node.js (LTS recommended)
+
+### Install
+
+```bash
+cd frontend
 npm install
-Configure environment variables:
-Ensure the backend server is running and update the apiUrl in the services to point to the correct backend server URL.
+```
 
-Start the client:
-bash
-Copy code
+---
+
+## ▶️ Run Locally
+
+Start the development server:
+
+```bash
 npm run start
-The client will be running at http://localhost:4200.
+```
 
-Note: If you are running the server on a free hosting service, the server may take approximately 40 seconds to start initially. Please be patient.
+The application will be available locally (default Angular port).
 
-Project Structure
-src/app/components/: Contains reusable components like headers and footers.
-src/app/pages/: Contains the main pages, such as home, profile, interests, search results, and about.
-src/app/services/: Contains services that interact with the backend API for authentication, post management, etc.
-src/app/models/: Contains interfaces for data models like Post, User, Interest, etc.
-src/app/guards/: Contains route guards for protecting certain routes based on authentication status.
-Running the Client
-To start the client locally, run the following command after installing dependencies:
+If a proxy configuration is used, ensure it points to the local backend server.
 
-bash
-Copy code
-npm run start
-The client will start on http://localhost:4200.
+---
 
-API Integration
-The client interacts with the backend API to handle various features like user authentication, post interactions, and interest management. Ensure the backend server is running before starting the client.
+## 🔧 API Configuration
 
-Troubleshooting
-Ensure the backend server is up and running, and the apiUrl is correctly set.
-Check the console for any errors or warnings during the startup process.
-For any authentication issues, ensure the JWT token is valid and correctly stored in local storage.
-Example Configuration
-In your Angular services or environment configuration, make sure the apiUrl points to your backend server:
+The frontend communicates with the backend via a configured API base URL. For production, requests are sent to:
 
-typescript
-Copy code
-private apiUrl = 'http://localhost:3000'; // Adjust this to your backend URL
-This README provides a comprehensive overview of the client setup, features, and usage. It is structured to be clear and informative for anyone setting up or working with the client project.
+- https://pawpal-network-backend.onrender.com
 
+Ensure this value is aligned with your environment or proxy configuration.
 
+---
 
+## ☁️ Deployment (Render)
 
+The frontend is deployed as a static site on Render.
 
+Typical configuration:
+
+- Root Directory: frontend
+- Build Command: npm install && npm run build
+- Publish Directory: dist/<project-name>/browser
+
+If you encounter a "Not Found" page after deployment, double‑check the publish directory path produced by the Angular build.
+
+---
+
+## 🎨 UI & UX Notes
+
+- The project is structured for clarity and maintainability
+- Components and pages are organized to support future feature growth
+- Styling and layout are designed with simplicity and readability in mind
+
+---
+
+This frontend completes the PawPal Network experience by delivering a smooth, accessible interface for end users.
 
